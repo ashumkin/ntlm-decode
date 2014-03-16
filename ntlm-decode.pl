@@ -11,8 +11,7 @@ use MIME::Base64;
 # http://download.microsoft.com/download/a/e/6/ae6e4142-aa58-45c6-8dcf-a657e5900cd3/%5BMS-NLMP%5D.pdf
 #
 
-$inp='TlRMTVNTUAABAAAAB4IIogAAAAAAAAAAAAAAAAAAAAAFASgKAAAADw==';
-$inp='TlRMTVNTUAACAAAAAAAAAAAoAAABggAAbQ91RfU/iQAAAAAAAAAAAAAAAAAAAAAA';
+$inp=$ARGV[0];
 
 $res = decode_base64($inp);
 
