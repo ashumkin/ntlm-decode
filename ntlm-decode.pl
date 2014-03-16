@@ -213,4 +213,11 @@ sub decode_line {
     }
 }
 
-decode_line($ARGV[0]);
+$line = $ARGV[0];
+if ($line) {
+    decode_line($line);
+} else {
+    while ($line = <>) {
+        decode_line($line);
+    }
+}
